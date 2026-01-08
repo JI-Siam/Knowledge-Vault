@@ -1,0 +1,12 @@
+
+
+
+nav{
+    display:  flexbox;
+    justify-content: right;
+}
+
+.logo{
+    width:  100px ;
+}
+
