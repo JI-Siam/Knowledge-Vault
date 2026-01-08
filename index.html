@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Vault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+
+        *{
+            padding:  0px;
+            margin : 0px; 
+            font-family:'Inter' ;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:  16px 120px 16px 120px;
+            gap: 10px;
+        }
+        
+
+        ul a{
+            padding : 0px 10px;
+             text-decoration : none;
+             color : black
+        }
+    
+
+        .btn-primary{
+
+            padding: 12px 16px; 
+            border:  none ;
+            border-radius: 4px; 
+            color:  white;
+            background-color: rgba(70, 145, 101, 1); 
+        }
+
+
+        #logo-navbar{
+            width: 140px;
+            height: 60px;
+        }
+
+
+        .banner{
+          height: 670px;
+          background-image: url('Knowledge-Vault/assets/hero-bg.png');
+          background-repeat: no-repeat;
+           display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .title-text{
+            width: 400px;
+        }
+
+        .hero{
+            display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .hero-text{
+            color: white;
+            font-size: 72px;
+            font-weight: 700;
+            font-style: bold;
+            padding: 16px 16px 0px 16px;
+        }
+
+        #hero-text2{
+            color: rgba(48, 184, 104, 1) ;
+        }
+
+        .hero-details{
+            width: 50%;
+            color:white; 
+            padding:  16px;
+        }
+
+        .btn-secondary{
+            margin-left: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+
+        .btn-earlyaccess{
+            background-color: white;
+            color: rgba(70, 145, 101, 1);
+            border-radius: 1000px;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 7px 20px;
+        }
+
+        .Apps{
+            margin-top: 50px;
+                 display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .apps-text{
+            font-size: 48px; 
+            color: black;
+            font-style: bold;
+            font-weight: 700;
+            padding: 16px 0px;
+           
+        }
+
+        .apps-details{
+            color: rgba(98, 115, 130, 1);
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .frame{
+            width: auto;
+            height: 300px;
+            padding: 24px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px -2px 2px rgba(0, 0 , 0, 0.1);
+        }
+    
+        .frame-vectors{
+            width: 32px;
+            height: 32px;
+            padding: 1.5px 2.49px; 
+        }
+
+        .ellipse{
+            display: flex;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+             background:rgba(249, 85, 85, 1) ;
+            justify-content: center;
+            align-items: center;  
+              }
+
+              .frame-text{
+                text-align: center;
+                font-size: 24px;
+                font-style: Semi Bold ; 
+                font-weight: 600;
+                margin: 16px;
+              }
+
+              .Apps-box{
+                margin: 44px 120px;
+                display: flex;
+                justify-content: space-around;
+                gap: 24px;
+              }
+
+              .brain-container{
+                display: flex;
+                margin: 120px;
+                align-items: center;
+                gap: 60px;
+              }
+
+              .checklist-img{
+                height: 20px;
+                width: 20px;
+              }
+
+              .checklist-item{
+                margin-bottom: 16px;
+                display: flex;
+                gap: 6px;
+                align-items: center;
+
+              }
+
+              .items{
+                margin-top: 40px;
+              }
+
+              .checklist-item-text{
+
+                 color:black;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: Medium;
+
+              }
+
+            
+
+              .Early-Access-Container{
+                border-radius: 12px;
+                padding: 80px 40px;
+                margin: 120px;
+                display: flex;
+                background-color: rgba(247, 246, 242, 1);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+
+     <nav>
+     <img id="logo-navbar" src="Knowledge-Vault/assets/logo-navbar.png" alt="logo-navbar">
+        <ul class="nav-items">
+            <a href="">Features</a>
+            <a href="">How It Works</a>
+            <a href="">Why It's Different</a>
+        </ul>
+        <button class="btn-primary btn-nav">Get Early Access</button>
+    </nav>
+
+    <div class="banner">
+            
+            <div class="hero">
+
+                <button class="btn-primary btn-earlyaccess">Early Access Now Open</button>
+            
+            <div>
+            <p class="hero-text">Structured Thinking,</p>
+           <p class="hero-text" id="hero-text2">Not Just Note-Taking.</p>
+             </div>
+           <p class="hero-details">
+            A private space to store notes, links, and learning summaries — designed to help you think clearly, connect ideas, and turn learning into long-term knowledge.
+           </p>
+           <div>
+            <button class="btn-primary">Start Building Your Vault</button>
+           <button class="btn-primary btn-secondary">See How it Works</button>
+           </div>
+            </div>
+    </div>
+
+    </header>
+   
+      <main>
+        <section class="Apps">
+
+            <p class="apps-text">Notes Don't Fail, Structure Does</p>
+            <p class="apps-details">You're not bad at learning. Your tools just weren't built for how knowledge actually works.</p>
+
+            <div class="Apps-box">
+
+                  <div class="frame">
+                <div class="ellipse">
+                            <img class="frame-vectors" src="Knowledge-Vault/assets/Vector.png" alt="">
+                </div>
+                <p class="frame-text">Scattered Notes</p>
+                <p class="apps-details">Your ideas live in 10 different apps, none of them connected.</p>
+            </div>
+
+             <div class="frame">
+                <div class="ellipse">
+                            <img class="frame-vectors" src="Knowledge-Vault/assets/Bookmarks.png" alt="">
+                </div>
+                <p class="frame-text">Bookmark Overload</p>
+                <p class="apps-details">Hundreds of saved links you'll never revisit or remember.</p>
+            </div>
+
+             <div class="frame">
+                <div class="ellipse">
+                            <img class="frame-vectors" src="Knowledge-Vault/assets/Brain.png" alt="">
+                </div>
+                <p class="frame-text">No Idea Connections</p>
+                <p class="apps-details">Insights stay isolated, never building into bigger understanding.</p>
+            </div>
+
+
+             <div class="frame">
+                <div class="ellipse">
+                            <img class="frame-vectors" src="Knowledge-Vault/assets/Info.png" alt="">
+                </div>
+                <p class="frame-text">Forgetting What You Learned</p>
+                <p class="apps-details">Knowledge fades because there's no system to retain it.</p>
+            </div>
+
+            </div>
+
+        </section>
+
+        <section class="Second-Brain">
+            <div class="brain-container">
+                <div class="brain-left">
+
+                    <img src="Knowledge-Vault/assets/knowledge.png" alt="knowledge">
+
+                </div>
+
+                <div class="brain-right">
+
+                    <p class="checklist-item-text" style="color: rgba(70, 145, 101, 1);">THE SOLUTION</p>
+                    <P class="apps-text">Your Second Brain,<br>Structured By Design.</P>
+                    <p class="apps-details">Personal Knowledge Vault isn't another note-taking app.z <br>
+                         It's a thinking environment where every note, link, and summary <br>
+                         becomes part of an interconnected web of understanding.</p>
+
+                 <div class="items">
+
+                    <div class="checklist-item">
+                        <img src="Knowledge-Vault/assets/CheckCircle.png" alt="checklist" class="checklist-img">
+                        <p class="checklist-item-text">Capture ideas with structure built-in from day one</p>
+                    </div>
+
+                    <div class="checklist-item">
+                        <img src="Knowledge-Vault/assets/CheckCircle.png" alt="checklist" class="checklist-img">
+                        <p class="checklist-item-text">Connect related concepts automatically as you write</p>
+                    </div>
+
+                    <div class="checklist-item">
+                        <img src="Knowledge-Vault/assets/CheckCircle.png" alt="checklist" class="checklist-img">
+                        <p class="checklist-item-text">Build lasting knowledge through reflection prompts</p>
+                    </div>
+
+                    <div class="checklist-item">
+                        <img src="Knowledge-Vault/assets/CheckCircle.png" alt="checklist" class="checklist-img">
+                        <p class="checklist-item-text">Find anything instantly with semantic search</p>
+                    </div>
+
+                </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <section class="Early-Access">
+            <div class="Early-Access-Container">
+                <p class="apps-text" style=" text-align: center;"> Ready To Think More clearly?</p>
+                <p class="apps-details" style=" text-align: center;">Join thousands of learners who are building their personal knowledge vaults. <br>
+                    Start free, no credit card required.</p>
+                <div>
+                    <button class="btn-primary" style="margin: 24px; box-shadow: 1px 2px 3px rgba(0, 0 , 0, 0.6);">Get Early Access</button>
+                </div>
+                <p class="apps-details">Free during early access • No credit card needed</p>
+            </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-logo">
+            <img src="Knowledge-Vault/assets/logo-footer.png" alt="logo-footer">
+        </div>
+
+        <div class="footer-social-links">
+
+            <p>Social Links</p>
+        </div>
+
+        <hr>
+
+        
+      </footer>
+
+</body>
+</html>
