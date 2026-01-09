@@ -4,286 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knowledge Vault</title>
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <style>
-
-        *{
-            padding:  0px;
-            margin : 0px; 
-            font-family:'Inter' ;
-        }
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding:  16px 120px 16px 120px;
-            gap: 10px;
-        }
-        
-
-        ul a{
-            padding : 0px 10px;
-             text-decoration : none;
-             color : black ; 
-        }
-
-        a:hover{
-
-         color: rgba(70, 145, 101, 1);
-        }
-    
-
-        .btn-primary{
-       
-
-            padding: 12px 16px; 
-            border:  none ;
-            border-radius: 4px; 
-            color:  white;
-            background-color: rgba(70, 145, 101, 1); 
-            cursor: pointer;
-        }
-
-        .btn-primary:hover{
-            
-            background-color: rgba(70, 145, 101, 0.7);
-        }
-
-
-        #logo-navbar{
-            width: 140px;
-            height: 60px;
-        }
-
-
-        .banner{
-          height: 670px;
-          background-image: url('assets/hero-bg.png');
-          background-repeat: no-repeat;
-           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        .title-text{
-            width: 400px;
-        }
-
-        .hero{
-            display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .hero-text{
-            color: white;
-            font-size: 72px;
-            font-weight: 700;
-            font-style: bold;
-            padding: 16px 16px 0px 16px;
-        }
-
-        #hero-text2{
-            color: rgba(48, 184, 104, 1) ;
-        }
-
-        .hero-details{
-            width: 50%;
-            color:white; 
-            padding:  16px;
-        }
-
-        .btn-secondary{
-            margin-left: 20px;
-            background-color: transparent;
-            border: 1px solid white;
-        }
-
-        .btn-earlyaccess{
-            display: inline-flex;
-            justify-content: space-between;
-            gap: 10px;
-            background-color: white;
-            color: rgba(70, 145, 101, 1);
-            border-radius: 1000px;
-            font-weight: 500;
-            font-size: 16px;
-            padding: 7px 20px;
-        }
-
-        .Apps{
-            margin-top: 50px;
-                 display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .apps-text{
-            font-size: 48px; 
-            color: black;
-            font-style: bold;
-            font-weight: 700;
-            padding: 16px 0px;
-           
-        }
-
-        .apps-details{
-            color: rgba(98, 115, 130, 1);
-            font-size: 16px;
-            font-weight: 400;
-        }
-
-        .frame{
-            width: auto;
-            height: 300px;
-            padding: 24px;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0px -2px 2px rgba(0, 0 , 0, 0.1);
-        }
-    
-        .frame-vectors{
-            width: 32px;
-            height: 32px;
-            padding: 1.5px 2.49px; 
-        }
-
-        .ellipse{
-            display: flex;
-            width: 60px;
-            height: 60px;
-            border-radius: 30px;
-             background:rgba(249, 85, 85, 1) ;
-            justify-content: center;
-            align-items: center;  
-              }
-
-              .frame-text{
-                text-align: center;
-                font-size: 24px;
-                font-style: Semi Bold ; 
-                font-weight: 600;
-                margin: 16px;
-              }
-
-              .Apps-box{
-                margin: 44px 120px;
-                display: flex;
-                justify-content: space-around;
-                gap: 24px;
-              }
-
-              .brain-container{
-                display: flex;
-                margin: 120px;
-                align-items: center;
-                gap: 60px;
-              }
-
-              .checklist-img{
-                height: 20px;
-                width: 20px;
-              }
-
-              .checklist-item{
-                margin-bottom: 16px;
-                display: flex;
-                gap: 6px;
-                align-items: center;
-
-              }
-
-              .items{
-                margin-top: 40px;
-              }
-
-              .checklist-item-text{
-
-                 color:black;
-            font-size: 16px;
-            font-weight: 500;
-            font-style: Medium;
-
-              }
-
-            
-
-              .Early-Access-Container{
-                border-radius: 12px;
-                padding: 80px 40px;
-                margin: 120px;
-                display: flex;
-                background-color: rgba(247, 246, 242, 1);
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-              }
-
-              .footer{
-                background-color: rgba(0, 25, 49, 1);
-              }
-
-              .footer-logo{
-                padding: 120px 120px 79.5px 120px;
-                display: flex;
-                border-bottom: 1px solid rgba(229, 231, 235, 0.2);
-                justify-content:  space-between;
-                align-items: top;
-              }
-
-              .social-link-text{
-                color : white;
-                font-size: 20px;
-                font-weight: 500;
-                font-style: Medium;
-              }
-
-
-              .copyright-text{
-                padding: 30px 120px;
-                color: white;
-                font-size: 16px;
-                font-weight: 400;
-                text-align: center;
-              }
-
-              .btn-access{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap:10px;
-                
-              }
-
-              .right-arrow{
-                width: 20px;
-                height: 20px;
-                ;
-              }
-
-              .btn-start-building{
-                display: inline-flex;
-                justify-content: space-between;
-                align-items: center;
-                gap:10px;
-              }
-
-              .social-icons{
-                padding-top: 16px;
-                display: flex;
-                gap: 16px;
-              }
-        
-
-    </style>
 </head>
 <body>
     <header class="header">
@@ -301,7 +26,7 @@
     <div class="banner">
             
             <div class="hero">
-                <button class="btn-primary btn-earlyaccess"><img src="./assets/Group 5.png" alt="">Early Access Now Open</button>
+                <button class="btn-primary btn-earlyaccess"><img src="./assets/Group-5.png" alt="">Early Access Now Open</button>
             <div>
             <p class="hero-text">Structured Thinking,</p>
            <p class="hero-text" id="hero-text2">Not Just Note-Taking.</p>
@@ -310,8 +35,8 @@
             A private space to store notes, links, and learning summaries — designed to help you think clearly, connect ideas, and turn learning into long-term knowledge.
            </p>
            <div>
-            <button class="btn-primary btn-start-building">Start Building Your Vault <img class="right-arrow" src="assets/ArrowRight.png" alt=""></button>
-           <button class="btn-primary btn-secondary">See How it Works</button>
+        <button class="btn-primary btn-start-building">Start Building Your Vault <img class="right-arrow" src="assets/ArrowRight.png" alt=""></button>
+           <button class="btn-primary btn-secondary btn-start-building"><img class="right-arrow" src="assets/Play.png" alt="">See How it Works</button>
            </div>
             </div>
     </div>
@@ -373,7 +98,7 @@
 
                 <div class="brain-right">
 
-                    <p class="checklist-item-text" style="color: rgba(70, 145, 101, 1);">THE SOLUTION</p>
+                    <p class="checklist-item-text solution-text" >THE SOLUTION</p>
                     <P class="apps-text">Your Second Brain,<br>Structured By Design.</P>
                     <p class="apps-details">Personal Knowledge Vault isn't another note-taking app.z <br>
                          It's a thinking environment where every note, link, and summary <br>
@@ -410,11 +135,11 @@
 
         <section class="Early-Access">
             <div class="Early-Access-Container">
-                <p class="apps-text" style=" text-align: center;"> Ready To Think More clearly?</p>
-                <p class="apps-details" style=" text-align: center;">Join thousands of learners who are building their personal knowledge vaults. <br>
+                <p class="apps-text early-access-text" > Ready To Think More clearly?</p>
+                <p class="apps-details early-access-text" >Join thousands of learners who are building their personal knowledge vaults. <br>
                     Start free, no credit card required.</p>
                 <div>
-                    <button class="btn-primary btn-access" style="margin: 24px; box-shadow: 1px 2px 3px rgba(0, 0 , 0, 0.6);">Get Early Access <img class="right-arrow" src="./assets/ArrowRight.png" alt=""></button>
+                    <button class="btn-primary btn-access" >Get Early Access <img class="right-arrow" src="./assets/ArrowRight.png" alt=""></button>
                 </div>
                 <p class="apps-details">Free during early access • No credit card needed</p>
             </div>
