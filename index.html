@@ -32,6 +32,7 @@
     
 
         .btn-primary{
+       
 
             padding: 12px 16px; 
             border:  none ;
@@ -92,6 +93,9 @@
         }
 
         .btn-earlyaccess{
+            display: inline-flex;
+            justify-content: space-between;
+            gap: 10px;
             background-color: white;
             color: rgba(70, 145, 101, 1);
             border-radius: 1000px;
@@ -254,6 +258,18 @@
                 ;
               }
 
+              .btn-start-building{
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                gap:10px;
+              }
+
+              .social-icons{
+                padding-top: 16px;
+                display: flex;
+                gap: 16px;
+              }
         
 
     </style>
@@ -274,7 +290,7 @@
     <div class="banner">
             
             <div class="hero">
-                <button class="btn-primary btn-earlyaccess">Early Access Now Open</button>
+                <button class="btn-primary btn-earlyaccess"><img src="./assets/Group 5.png" alt="">Early Access Now Open</button>
             <div>
             <p class="hero-text">Structured Thinking,</p>
            <p class="hero-text" id="hero-text2">Not Just Note-Taking.</p>
@@ -283,7 +299,7 @@
             A private space to store notes, links, and learning summaries — designed to help you think clearly, connect ideas, and turn learning into long-term knowledge.
            </p>
            <div>
-            <button class="btn-primary">Start Building Your Vault</button>
+            <button class="btn-primary btn-start-building">Start Building Your Vault <img class="right-arrow" src="assets/ArrowRight.png" alt=""></button>
            <button class="btn-primary btn-secondary">See How it Works</button>
            </div>
             </div>
@@ -399,6 +415,11 @@
             <img src="./assets/logo-footer.png" alt="logo-footer">
                <div class="footer-social-links">
                  <p class="social-link-text">Social Links</p>
+                 <div class="social-icons">
+                    <img src="assets/fi_145807.png" alt="">
+                    <img src="assets/fi_5968764.png" alt="">
+                    <img src="assets/fi_5969020.png" alt="">
+                 </div>
         </div>
 
         </div>
