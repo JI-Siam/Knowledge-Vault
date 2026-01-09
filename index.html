@@ -49,7 +49,7 @@
 
         .banner{
           height: 670px;
-          background-image: url('Knowledge-Vault/assets/hero-bg.png');
+          background-image: url('assets/hero-bg.png');
           background-repeat: no-repeat;
            display: flex;
           flex-direction: column;
@@ -211,14 +211,58 @@
                 justify-content: center;
                 align-items: center;
               }
+
+              .footer{
+                background-color: rgba(0, 25, 49, 1);
+              }
+
+              .footer-logo{
+                padding: 120px 120px 79.5px 120px;
+                display: flex;
+                border-bottom: 1px solid rgba(229, 231, 235, 0.2);
+                justify-content:  space-between;
+                align-items: top;
+              }
+
+              .social-link-text{
+                color : white;
+                font-size: 20px;
+                font-weight: 500;
+                font-style: Medium;
+              }
+
+
+              .copyright-text{
+                padding: 30px 120px;
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+              }
+
+              .btn-access{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap:10px;
+                
+              }
+
+              .right-arrow{
+                width: 20px;
+                height: 20px;
+                ;
+              }
+
         
+
     </style>
 </head>
 <body>
     <header class="header">
 
      <nav>
-     <img id="logo-navbar" src="Knowledge-Vault/assets/logo-navbar.png" alt="logo-navbar">
+     <img id="logo-navbar" src="./assets/logo-navbar.png" alt="logo-navbar">
         <ul class="nav-items">
             <a href="">Features</a>
             <a href="">How It Works</a>
@@ -230,9 +274,7 @@
     <div class="banner">
             
             <div class="hero">
-
                 <button class="btn-primary btn-earlyaccess">Early Access Now Open</button>
-            
             <div>
             <p class="hero-text">Structured Thinking,</p>
            <p class="hero-text" id="hero-text2">Not Just Note-Taking.</p>
@@ -259,7 +301,7 @@
 
                   <div class="frame">
                 <div class="ellipse">
-                            <img class="frame-vectors" src="Knowledge-Vault/assets/Vector.png" alt="">
+                            <img class="frame-vectors" src="./assets/Vector.png" alt="">
                 </div>
                 <p class="frame-text">Scattered Notes</p>
                 <p class="apps-details">Your ideas live in 10 different apps, none of them connected.</p>
@@ -267,7 +309,7 @@
 
              <div class="frame">
                 <div class="ellipse">
-                            <img class="frame-vectors" src="Knowledge-Vault/assets/Bookmarks.png" alt="">
+                            <img class="frame-vectors" src="./assets/Bookmarks.png" alt="">
                 </div>
                 <p class="frame-text">Bookmark Overload</p>
                 <p class="apps-details">Hundreds of saved links you'll never revisit or remember.</p>
@@ -275,7 +317,7 @@
 
              <div class="frame">
                 <div class="ellipse">
-                            <img class="frame-vectors" src="Knowledge-Vault/assets/Brain.png" alt="">
+                            <img class="frame-vectors" src="./assets/Brain.png" alt="">
                 </div>
                 <p class="frame-text">No Idea Connections</p>
                 <p class="apps-details">Insights stay isolated, never building into bigger understanding.</p>
@@ -284,7 +326,7 @@
 
              <div class="frame">
                 <div class="ellipse">
-                            <img class="frame-vectors" src="Knowledge-Vault/assets/Info.png" alt="">
+                            <img class="frame-vectors" src="./assets/Info.png" alt="">
                 </div>
                 <p class="frame-text">Forgetting What You Learned</p>
                 <p class="apps-details">Knowledge fades because there's no system to retain it.</p>
@@ -298,7 +340,7 @@
             <div class="brain-container">
                 <div class="brain-left">
 
-                    <img src="Knowledge-Vault/assets/knowledge.png" alt="knowledge">
+                    <img src="./assets/knowledge.png" alt="knowledge">
 
                 </div>
 
@@ -313,22 +355,22 @@
                  <div class="items">
 
                     <div class="checklist-item">
-                        <img src="Knowledge-Vault/assets/CheckCircle.png" alt="checklist" class="checklist-img">
+                        <img src="./assets/CheckCircle.png" alt="checklist" class="checklist-img">
                         <p class="checklist-item-text">Capture ideas with structure built-in from day one</p>
                     </div>
 
                     <div class="checklist-item">
-                        <img src="Knowledge-Vault/assets/CheckCircle.png" alt="checklist" class="checklist-img">
+                        <img src="./assets/CheckCircle.png" alt="checklist" class="checklist-img">
                         <p class="checklist-item-text">Connect related concepts automatically as you write</p>
                     </div>
 
                     <div class="checklist-item">
-                        <img src="Knowledge-Vault/assets/CheckCircle.png" alt="checklist" class="checklist-img">
+                        <img src="./assets/CheckCircle.png" alt="checklist" class="checklist-img">
                         <p class="checklist-item-text">Build lasting knowledge through reflection prompts</p>
                     </div>
 
                     <div class="checklist-item">
-                        <img src="Knowledge-Vault/assets/CheckCircle.png" alt="checklist" class="checklist-img">
+                        <img src="./assets/CheckCircle.png" alt="checklist" class="checklist-img">
                         <p class="checklist-item-text">Find anything instantly with semantic search</p>
                     </div>
 
@@ -345,24 +387,23 @@
                 <p class="apps-details" style=" text-align: center;">Join thousands of learners who are building their personal knowledge vaults. <br>
                     Start free, no credit card required.</p>
                 <div>
-                    <button class="btn-primary" style="margin: 24px; box-shadow: 1px 2px 3px rgba(0, 0 , 0, 0.6);">Get Early Access</button>
+                    <button class="btn-primary btn-access" style="margin: 24px; box-shadow: 1px 2px 3px rgba(0, 0 , 0, 0.6);">Get Early Access <img class="right-arrow" src="./assets/ArrowRight.png" alt=""></button>
                 </div>
                 <p class="apps-details">Free during early access • No credit card needed</p>
             </div>
         </section>
       </main>
 
-      <footer>
+      <footer class="footer">
         <div class="footer-logo">
-            <img src="Knowledge-Vault/assets/logo-footer.png" alt="logo-footer">
+            <img src="./assets/logo-footer.png" alt="logo-footer">
+               <div class="footer-social-links">
+                 <p class="social-link-text">Social Links</p>
         </div>
 
-        <div class="footer-social-links">
-
-            <p>Social Links</p>
         </div>
 
-        <hr>
+           <p class="copyright-text">&copy; 2026 Personal Knowledge Vault. All rights reserved.</p>
 
         
       </footer>
